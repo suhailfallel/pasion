@@ -173,10 +173,16 @@
     if (menuContainer) {
       let menuIsotope = new Isotope(menuContainer, {
         itemSelector: '.menu-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.filter-thai'
       });
 
       let menuFilters = select('#menu-flters li', true);
+
+      let firstFilterOption = select('#menu-filters li[data-filter=".filter-thai"]');
+      if(firstFilterOption){
+        firstFilterOption.click();
+      }
 
       on('click', '#menu-flters li', function(e) {
         e.preventDefault();
@@ -193,7 +199,6 @@
         });
       }, true);
     }
-
   });
 
   /**
