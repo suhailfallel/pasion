@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     #hero {
-        /* height: 50vh; */
+        height: 50vh;
         border-radius: 0 0 25% 25%;
     }
 
@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* @media (max-height: 600px) {
+@media (max-height: 600px) {
     #hero {
         height: 50vh;
     }
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 130px;
         padding-bottom: 60px;
     }
-} */
+}
   
 @-webkit-keyframes pulsate-btn {
     0% {
