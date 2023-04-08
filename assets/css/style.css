@@ -572,7 +572,7 @@ h1, h2, h3, h4, h5, h6 {
 # About
 --------------------------------------------------------------*/
 .about {
-    height: 125vh;
+    height: auto;
     background: url("../img/about-interior.jpg") center center;
     border-radius: 45% 45% 0 0;
     background-size: cover;
@@ -905,7 +905,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     .menu .menu-item {
-        padding-left: 30%;
+        padding-left: 27%;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu .menu-item {
+        padding-left: 23%;
     }
 }
 
