@@ -487,6 +487,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     }
 }
+
+@media (max-width: 576px) {
+    #hero .btns {
+        display: none;
+    }
+}
   
 @-webkit-keyframes pulsate-btn {
     0% {
@@ -566,7 +572,7 @@ h1, h2, h3, h4, h5, h6 {
 # About
 --------------------------------------------------------------*/
 .about {
-    height: auto;
+    height: 125vh;
     background: url("../img/about-interior.jpg") center center;
     border-radius: 45% 45% 0 0;
     background-size: cover;
