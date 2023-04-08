@@ -509,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 # About
 --------------------------------------------------------------*/
 .about {
-    height: 120vh;
+    height: auto;
     background: url("../img/about-interior.jpg") center center;
     border-radius: 45% 45% 0 0;
     background-size: cover;
@@ -584,7 +584,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
     .about {
-        height: 120vh;
         border-radius: 30% 30% 0 0;
         padding: 150px 0;
     }
@@ -602,7 +601,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 700px) {
     .about {
-        height: 116vh;
         border-radius: 25% 25% 0 0;
         padding: 160px 0;
     }
@@ -624,7 +622,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 500px) {
     .about {
-        height: 112vh;
         border-radius: 25% 25% 0 0;
         padding: 100px 0;
     }
