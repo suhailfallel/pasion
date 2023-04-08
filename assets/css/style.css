@@ -509,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 # About
 --------------------------------------------------------------*/
 .about {
-    height: 110vh;
+    height: 120vh;
     background: url("../img/about-interior.jpg") center center;
     border-radius: 45% 45% 0 0;
     background-size: cover;
