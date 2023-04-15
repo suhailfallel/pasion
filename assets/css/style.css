@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     background: #000000;
     color: #fff;
 }
@@ -18,7 +18,7 @@ a:hover {
 }
   
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 #header .logo img {
-    max-height: 50px;
+    max-height: 80px;
     margin-right: 350px;
 }
 
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #dd9415;
     white-space: nowrap;
     transition: 0.3s;
-    font-size: 14px;
+    font-size: 15px;
   }
   
   .navbar a i {
@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 56px;
     color: #dd9415;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     padding-top: 30px;
 }
   
@@ -617,6 +617,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.about .about-cont {
+    padding-top: 50px;
+}
+
 .about .content p {
     font-weight: 100;
     font-size: 15px;
@@ -780,16 +784,20 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
-.menu h2 {
+
+.menu h3 {
+    font-weight: 400;
+    font-size: 26px;
+    color: #dd9415;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #dd9415;
     padding-top: 50px;
 }
 
 @media (max-width: 500px) {
-    .menu h2 {
+    .menu h3 {
         padding-top: 20px;
     }
 }
@@ -798,9 +806,10 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 100;
     text-align: center;
+    padding-top: 50px;
 }
 
 .menu #menu-flters {
@@ -842,6 +851,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
     float: left;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(to bottom right, #080808bd, #ffffff3f);
 }
 
 .menu .menu-content {
@@ -959,16 +969,19 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
 }
 
-.specials h2 {
+.specials h3 {
+    font-weight: 400;
+    font-size: 26px;
+    color: #dd9415;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #dd9415;
     padding-top: 50px;
 }
 
 @media (max-width: 500px) {
-    .specials h2 {
+    .specials h3 {
         padding-top: 20px;
     }
 }
@@ -977,9 +990,10 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 100;
     text-align: center;
+    padding-top: 50px;
 }
 
 .specials {
@@ -987,7 +1001,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .specials .special-container {
-    padding-top: 35px;
+    padding-top: 45px;
     position: relative;
     transition: all 0.3s ease-out;
 }
@@ -1113,12 +1127,15 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.03);
 }
 
-.takeaway .section-title h2 {
+.takeaway .section-title h3 {
+    font-weight: 400;
+    font-size: 26px;
     color: #dd9415;
-    padding-top: 50px;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .takeaway .section-title p {
@@ -1128,6 +1145,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 45px;
+}
+
+.takeaway .takeaway-cont {
+    padding-top: 45px;
 }
 
 .takeaway .container {
@@ -1224,11 +1246,14 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact h2 {
+.contact h3 {
+    font-weight: 400;
+    font-size: 26px;
+    color: #dd9415;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #dd9415;
     padding-top: 50px;
 }
 
@@ -1236,16 +1261,23 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: 100;
     line-height: 10px;
+    
 }
 
 .contact .center-p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding-top: 45px;
 }
 
 .contact .info {
     width: 100%;
+}
+
+.contact .container {
+    padding-top: 25px;
 }
 
 .contact .info i {
@@ -1279,6 +1311,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact .info .open-hours, .contact .info .email, .contact .info .phone {
     margin-top: 40px;
+}
+
+.contact .location-map {
+    padding-top: 45px;
 }
 
 .contact .php-email-form {
@@ -1552,4 +1588,411 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     color: #fff;
 }
+
+
+/*+++++******-----+++++======+++++++*******^^^^^^^
+        MENU PAGE SPECIFIC
+^^^^^^^*********++++++++=======+++++++********++*/
   
+/*--------------------------------------------------------------
+# #menumain
+--------------------------------------------------------------*/
+
+#menumain {
+    width: 100%;
+    height: auto;
+    background: url("../img/menu-page-top.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#menumain h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #dd9415;
+    font-family: "Poppins", sans-serif;
+    padding-top: 15%;
+}
+
+@media (max-width: 576px) {
+    #menumain h1 {
+        padding-top: 50%;
+    }
+}
+  
+#menumain p {
+    color: #eee;
+    margin-bottom: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+@media (max-width: 576px) {
+    #menumain p {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+}
+
+/*--------------------------------------------------------------
+# #menu-menu
+--------------------------------------------------------------*/
+
+#menu-menu {
+    border-top: 1px solid #a49b89;
+    border-bottom: 1px solid #a49b89;
+}
+
+#menu-menu #menu-flters {
+    padding: 0;
+    margin: 0 auto 0 auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 25px;
+}
+
+#menu-menu #menu-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px 10px 12px;
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 1;
+    color: #dd9415;
+    margin-bottom: 10px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 50px;
+}
+
+#menu-menu #menu-flters li:hover, #menu-menu #menu-flters li.filter-active {
+    color: #fff;
+}
+
+#menu-menu #menu-flters li:last-child {
+    margin-right: 0;
+}
+
+#menu-menu #menu-flters a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    color: #dd9415;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 16px;
+}
+  
+#menu-menu #menu-flters a i {
+    font-size: 15px;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+#menu-menu #menu-flters a:hover, #menu-menu #menu-flters .active, #menu-menu #menu-flters li:hover > a {
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# #thai-food-menu
+--------------------------------------------------------------*/
+
+#thai-food-menu .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#thai-food-menu .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/thai-food-head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#thai-food-menu .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#thai-food-menu .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #thai-food-menu .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #thai-food-menu .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #thai-food-menu .dish-list li span {
+    color: #727272;
+  }
+  
+  
+  @media (min-width: 768px) {
+    #thai-food-menu .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+
+/*--------------------------------------------------------------
+# #sushi-menu
+--------------------------------------------------------------*/
+
+#sushi-menu .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#sushi-menu .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/sushi-head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#sushi-menu .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#sushi-menu .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #sushi-menu .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #sushi-menu .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #sushi-menu .dish-list li span {
+    color: #727272;
+  }
+  
+
+  
+  @media (min-width: 768px) {
+    #sushi-menu .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# #sea-foods-menu
+--------------------------------------------------------------*/
+
+#sea-foods-menu .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#sea-foods-menu .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/sea-food-head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#sea-foods-menu .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#sea-foods-menu .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #sea-foods-menu .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #sea-foods-menu .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #sea-foods-menu .dish-list li span {
+    color: #727272;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    #sea-foods-menu .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+
+/*--------------------------------------------------------------
+# #salads-menu
+--------------------------------------------------------------*/
+
+#salads-menu .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#salads-menu .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/salad-head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#salads-menu .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#salads-menu .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #salads-menu .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #salads-menu .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #salads-menu .dish-list li span {
+    color: #727272;
+  }
+  
+  @media (min-width: 768px) {
+    #salads-menu .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+  
+
+/*--------------------------------------------------------------
+# #asian-foods-menu
+--------------------------------------------------------------*/
+
+#asian-foods-menu .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#asian-foods-menu .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/asian-food-head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#asian-foods-menu .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#asian-foods-menu .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #asian-foods-menu .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #asian-foods-menu .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #asian-foods-menu .dish-list li span {
+    color: #727272;
+  }
+  
+  @media (min-width: 768px) {
+    #asian-foods-menu .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
