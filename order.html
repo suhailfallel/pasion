@@ -63,15 +63,15 @@
                 const forms = document.getElementById("myForm");
                 forms.addEventListener("submit", function(event) {
                   event.preventDefault();
-                  const phone = document.getElementById("phone").value;
-                  const name = document.getElementById("name").value;
-                  const location = document.getElementById("location").value;
-                  const email = document.getElementById("email").value;
-                  const comments = document.getElementById("comments").value;
-                  const item = new URLSearchParams(window.location.search);
-                  const link = 'https://pasionsushi.com/offers.html';
-                  const message = `Item: ${item} Name: ${name} Phone: ${phone} Location: ${location} Comments: ${comments} Ordered Via: ${link}.`;
-                  const url = `https://api.whatsapp.com/send?phone=+971506878229&text=${encodeURIComponent(message)}`;
+                  let phone = document.getElementById("phone").value;
+                  let name = document.getElementById("name").value;
+                  let location = document.getElementById("location").value;
+                  let email = document.getElementById("email").value;
+                  let comments = document.getElementById("comments").value;
+                  let item = new URLSearchParams(window.location.search);
+                  let link = 'https://pasionsushi.com/offers.html';
+                  let message = `Item: ${item} Name: ${name} Phone: ${phone} Location: ${location} Comments: ${comments} Ordered Via: ${link}.`;
+                  let url = `https://api.whatsapp.com/send?phone=+971506878229&text=${encodeURIComponent(message)}`;
                   window.open(url);
                 });
               </script>
