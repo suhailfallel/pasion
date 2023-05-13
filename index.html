@@ -34,9 +34,59 @@
 
         <!-- Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+
+            /*--------------------------------------------------------------
+            # Contact Buttons
+            --------------------------------------------------------------*/
+
+            .contact-buttons {
+                position: fixed;
+                right: 15px;
+                bottom: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .phone-button, .whatsapp-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                background-color: #17fd02;
+                color: #fff;
+            }
+            
+            .phone-button:hover, .whatsapp-button:hover {
+                cursor: pointer;
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .phone-button i, .whatsapp-button i {
+                font-size: 26px;
+            }
+        </style>
     </head>
 
     <body>
+
+        <!-- ======= Top Bar ======= -->
+        <div id="topbar" class="d-flex align-items-center fixed-top">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+
+                <div class="contact-info d-flex align-items-center">
+                    <a href="tel:+971 54 466 9828" ><i class="bi bi-phone d-flex align-items-center"><span>+971 54 466 9828</span></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=+971506878229" ><i class="bx bxl-whatsapp d-flex align-items-center ms-4"><span>+971 50 687 8229</span></i></a>
+                </div>
+
+            </div>
+        </div>
 
         <!-- Header Starts -->
         <header id="header" class="fixed-top d-flex align-items-cente">
@@ -292,7 +342,12 @@
                                     </div>
                                 </div>
                                 <div class="special-name">SUSHI VOLCANO</div>
-                                <div class="special-desc">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</div>
+                                <div class="special-desc">Fresh vegetables and premium sushi-grade fish are 
+                                    rolled up in a crispy coating and drizzled with spicy sauce to make this 
+                                    flavorful dish. Sushi Volcano is a must-try for any sushi lover looking 
+                                    to spice up their dining experience due to its perfect combination of 
+                                    flavors and textures.
+                                </div>
                             </div>
                         </div>
                         
@@ -304,7 +359,11 @@
                                     </div>
                                 </div>
                                 <div class="special-name">OSAKI CRAB SALAD</div>
-                                <div class="special-desc">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</div>
+                                <div class="special-desc">Succulent crab meat, crisp greens, and a tangy dressing 
+                                    make Osaki Crab Salad a refreshing and flavorful dish. If you're looking for a 
+                                    light and refreshing lunch or appetizer, this dish is a great choice as well. 
+                                    It's delicious and healthy, so anyone can enjoy it.
+                                </div>
                             </div>
                         </div>
 
@@ -316,7 +375,12 @@
                                     </div>
                                 </div>
                                 <div class="special-name">MIX SEAFOOD TANK</div>
-                                <div class="special-desc">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</div>
+                                <div class="special-desc">Take your taste buds on an excursion with our Blend 
+                                    Fish Tank. Fresh seafood is seasoned to perfection and cooked to 
+                                    perfection in this delectable dish. This dish is sure to satisfy any 
+                                    seafood lover's cravings because it has a variety of flavors and textures 
+                                    in every bite
+                                </div>
                             </div>
                         </div>
 
@@ -328,7 +392,12 @@
                                     </div>
                                 </div>
                                 <div class="special-name">CRAB SALAD</div>
-                                <div class="special-desc">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</div>
+                                <div class="special-desc">Made with delicious crab meat, new vegetables, and a 
+                                    lively dressing, this salad is overflowing with flavor and sustenance. 
+                                    Crispy greens and a tangy dressing perfectly complement the sweet and 
+                                    tender crab meat, which has been delicately seasoned. It makes a great 
+                                    light lunch or a refreshing start to your meal.
+                                </div>
                             </div>
                         </div>
 
@@ -433,7 +502,17 @@
                             <!-- Contact Form -->
                             <div class="col-lg-8 mt-5 mt-lg-0">
         
-                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <form action="https://formsubmit.co/pasionsushism@gmail.com" method="post" role="form" class="php-email-form">
+
+                                    <!-- Honeypot -->
+                                    <input type="text" name="_honey" style="display: none;">
+
+                                    <!-- Disable Captcha -->
+                                    <input type="hidden" name="_captcha" value="false">
+
+                                    <!-- Next Page -->
+                                    <input type="hidden" name="_next" value="success.html">
+
                                     <div class="row">
                                     <div class="col-md-6 form-group">
                                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -520,6 +599,16 @@
         <!-- Preloader -->
         <div id="preloader"></div>
 
+        <!-- Contact Buttons -->
+        <div class="contact-buttons">
+            <a href="tel:+971 54 466 9828" class="phone-button">
+              <i class="bx bx-phone"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+971506878229" class="whatsapp-button">
+              <i class="bx bxl-whatsapp"></i>
+            </a>
+        </div>
+
         <!-- Back to Top Button -->
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -533,5 +622,18 @@
 
         <!--  Main JS File -->
         <script src="assets/js/main.js"></script>
+
+        <script>
+            const whatsappBtn = document.getElementById('whatsapp-button');
+            whatsappBtn.addEventListener('click', () => {
+            window.open('https://api.whatsapp.com/send?phone=+971506878229', '_blank');
+            });
+
+            // Phone button
+            const phoneBtn = document.getElementById('phone-button');
+            phoneBtn.addEventListener('click', () => {
+            window.open('tel:+971544669828', '_blank');
+            });
+        </script>
     </body>
 </html>

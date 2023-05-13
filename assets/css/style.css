@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -114,6 +115,54 @@ h1, h2, h3, h4, h5, h6 {
         transition-delay: 0 !important;
     }
 }
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    z-index: 996;
+  }
+  
+  #topbar.topbar-scrolled {
+    top: -40px;
+  }
+  
+  #topbar .contact-info i {
+    font-style: normal;
+    color: #d9ba85;
+  }
+  
+  #topbar .contact-info i span {
+    padding-left: 5px;
+    color: #fff;
+  }
+  
+  #topbar .languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #cda45e;
+  }
+  
+  #topbar .languages ul a {
+    color: white;
+  }
+  
+  #topbar .languages ul li + li {
+    padding-left: 10px;
+  }
+  
+  #topbar .languages ul li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    content: "/";
+  }
 
 /*--------------------------------------------------------------
 # Header
@@ -623,7 +672,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about .content p {
     font-weight: 100;
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
 }
   
@@ -1073,7 +1122,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .specials .special-item .special-desc {
-    height: 80px;
+    height: auto;
     width: auto;
     text-align: center;
     color: white;
@@ -1081,10 +1130,18 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #dd9415;
 }
 
+@media (max-width: 576px) {
+    .specials .special-item .special-desc {
+        font-size: 14px;
+        /* height: 110px; */
+    }
+}
+
 .specials .special-item:hover .special-desc {
     color: #000;
     border: 0px;
     background-color: #dd9415;
+    padding: 20px;
 }
 
 .specials .special-item:hover .special-name, 
@@ -1700,6 +1757,64 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# #main-dishes
+--------------------------------------------------------------*/
+
+#main-dishes .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#main-dishes .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/desert\ head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#main-dishes .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#main-dishes .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #main-dishes .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #main-dishes .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #main-dishes .dish-list li span {
+    color: #727272;
+  }
+  
+  @media (min-width: 768px) {
+    #main-dishes .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+/*--------------------------------------------------------------
 # #thai-food-menu
 --------------------------------------------------------------*/
 
@@ -1819,7 +1934,127 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  /*--------------------------------------------------------------
+    /*--------------------------------------------------------------
+# #noodles-menu
+--------------------------------------------------------------*/
+
+#noodles-menu .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#noodles-menu .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/noodles\ head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#noodles-menu .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#noodles-menu .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #noodles-menu .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #noodles-menu .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #noodles-menu .dish-list li span {
+    color: #727272;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    #noodles-menu .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+    /*--------------------------------------------------------------
+# #soup-and-appetizer
+--------------------------------------------------------------*/
+
+#soup-and-appetizer .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#soup-and-appetizer .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/soups\ head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#soup-and-appetizer .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#soup-and-appetizer .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #soup-and-appetizer .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #soup-and-appetizer .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #soup-and-appetizer .dish-list li span {
+    color: #727272;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    #soup-and-appetizer.dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+/*--------------------------------------------------------------
 # #sea-foods-menu
 --------------------------------------------------------------*/
 
@@ -1996,3 +2231,297 @@ h1, h2, h3, h4, h5, h6 {
       width: 50%;
     }
   }
+
+    /*--------------------------------------------------------------
+# #pasta-menu
+--------------------------------------------------------------*/
+
+#pasta-menu .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#pasta-menu .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/pasta\ head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#pasta-menu .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#pasta-menu .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #pasta-menu .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #pasta-menu .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #pasta-menu .dish-list li span {
+    color: #727272;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    #pasta-menu .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+    /*--------------------------------------------------------------
+# #breakfast
+--------------------------------------------------------------*/
+
+#breakfast .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#breakfast .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/breakfast\ head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#breakfast .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#breakfast .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #breakfast .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #breakfast .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #breakfast .dish-list li span {
+    color: #727272;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    #breakfast .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+    /*--------------------------------------------------------------
+# #dessert
+--------------------------------------------------------------*/
+
+#dessert .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#dessert .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/desert\ head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#dessert .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#dessert .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #dessert .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #dessert .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #dessert .dish-list li span {
+    color: #727272;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    #dessert .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+    /*--------------------------------------------------------------
+# #juice-and-drinks
+--------------------------------------------------------------*/
+
+#juice-and-drinks .thai-conatiner {
+    position: relative;
+    overflow: hidden;
+}
+
+#juice-and-drinks .dish-image {
+    width: 100%;
+    height: auto;
+    background: url("../img/Juice\ and\ Drinks\ head.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#juice-and-drinks .dish-image p {
+    font-size: 35px;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+    font-style: italic;
+    color: #dd9415;
+}
+
+#juice-and-drinks .dish-list-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #juice-and-drinks .dish-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 8%;
+  }
+  
+  #juice-and-drinks .dish-list li {
+    padding: 20px 0;
+    font-size: 18px;
+    color: #000;
+    font-style: oblique;
+  }
+
+  #juice-and-drinks .dish-list li span {
+    color: #727272;
+  }
+  
+ 
+  
+  @media (min-width: 768px) {
+    #juice-and-drinks .dish-list li {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+/*--------------------------------------------------------------
+# Privacy Policy Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# #privacy-policy
+--------------------------------------------------------------*/
+
+#privacy-policy h1 {
+    padding-top: 25%;
+}
+
+@media (max-width: 576px) {
+    #privacy-policy h1 {
+        padding-top: 40%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Terms of Services Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# #terms-of-services
+--------------------------------------------------------------*/
+
+#terms-of-services h1 {
+    padding-top: 25%;
+}
+
+@media (max-width: 576px) {
+    #terms-of-services h1 {
+        padding-top: 40%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Success Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# #success
+--------------------------------------------------------------*/
+
+#success h1 {
+    padding-top: 25%;
+}
+
+@media (max-width: 576px) {
+    #success h1 {
+        padding-top: 40%;
+    }
+}

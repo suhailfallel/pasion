@@ -34,6 +34,44 @@
 
         <!-- Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+
+            /*--------------------------------------------------------------
+            # Contact Buttons
+            --------------------------------------------------------------*/
+
+            .contact-buttons {
+                position: fixed;
+                right: 15px;
+                bottom: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .phone-button, .whatsapp-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                background-color: #dd9415;
+                color: #fff;
+            }
+            
+            .phone-button:hover, .whatsapp-button:hover {
+                cursor: pointer;
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .phone-button i, .whatsapp-button i {
+                font-size: 26px;
+            }
+        </style>
     </head>
 
     <body>
@@ -77,16 +115,49 @@
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="menu-flters">
+                            <li><a class="nav-link scrollto" href="main-dishes">Main Dishes</a></li>
                             <li><a class="nav-link scrollto" href="#thai-food-menu">Thai Foods</a></li>
                             <li><a class="nav-link scrollto" href="#sushi-menu">Sushi</a></li>
-                            <li><a class="nav-link scrollto" href="#sea-foods-menu">Noodles</a></li>
-                            <li><a class="nav-link scrollto" href="#asian-foods-menu">Asian Foods</a></li>
-                            <li><a class="nav-link scrollto" href="salads-menu">Salads</a></li>
+                            <li><a class="nav-link scrollto" href="#noodles-menu">Noodles</a></li>
+                            <li><a class="nav-link scrollto" href="#soup-and-appetizer">Soup & Appetizer</a></li>
+                            <li><a class="nav-link scrollto" href="#salads-menu">Salads</a></li>
+                            <li><a class="nav-link scrollto" href="#pasta-menu">Pasta</a></li>
+                            <li><a class="nav-link scrollto" href="#breakfast">Breakfast</a></li>
+                            <li><a class="nav-link scrollto" href="#dessert">Dessert</a></li>
+                            <li><a class="nav-link scrollto" href="#juice-and-drinks">Juice & Drinks</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section><!-- Menu Page Main Menu Endss-->
+
+        <!--  Main Dishes Menu Starts-->
+        <section id="main-dishes">
+            <div class="thai-container">
+                <div class="dish-image">
+                    <p>MAIN DISHES</p>
+                </div>
+                <div class="dish-list-container">
+                    <ul class="dish-list row">
+                        <li class="col-md-6 col-lg-6">RIB EYE STEAK SIZZILING
+                            <span>................................ AED 130.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">LOBSTER SIZZLING
+                            <span>........................................ AED 180.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">BURGER BEEFOR CHICKEN
+                            <span>............................. AED 35.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PAN FRIED SALMON
+                            <span>...................................... AED 75.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">JAPANESE FRIED RICE
+                            <span>................................... AED 26.00
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <!--  Thai Foods Menu Starts-->
         <section id="thai-food-menu">
@@ -97,42 +168,89 @@
                     <div class="dish-list-container">
                         <ul class="dish-list row">
                             <li class="col-md-6 col-lg-6">PAD KRAPRAW SEA FOOD 
-                                <span>........ AED 40.00 
+                                <span>...................... AED 40.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">THAI PAPAYA SALAD
                                 <span>.................................. AED 35.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">CRAB SALAD
-                                <span>.............................. AED 35.00 
+                                <span>................................................... AED 35.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">FRIED MIX VEGETABLES SHRIMP
                                 <span>.............. AED 40.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">LAB KAI CHICKEN
-                                <span>...................... AED 35.00 
+                                <span>............................................. AED 35.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">FRIED FISH WITH SWEET CHILLY SAUCE
                                 <span>.. AED 35.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">GREEN CURRY BEEF
-                                <span>.................. AED 35.00
+                                <span>.................................... AED 35.00
                                 </span></li>
                             <li class="col-md-6 col-lg-6">GRILLED FISH
-                                <span>............................................. AED 40.00  
+                                <span>.................................................... AED 40.00  
                                 </span></li>
                             <li class="col-md-6 col-lg-6">GRILLED SEA FOOD MIX
-                                <span>........... AED 99.00 
+                                <span>.............................. AED 99.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">MIX SEA FOOD TANK
-                                <span>................................ AED 99.00 
+                                <span>....................................... AED 99.00 
                                 </span></li>
                             <li class="col-md-6 col-lg-6">PANAENG BEEF
-                                <span>......................... AED 35.00  
+                                <span>.................................................. AED 35.00  
                                 </span></li>
                             <li class="col-md-6 col-lg-6">RED CURRY SHRIMP
-                                <span>................................. AED 40.00  
+                                <span>............................................. AED 40.00  
                                 </span></li>
-
+                            <li class="col-md-6 col-lg-6"> SHELL MUSSEL GRILL WITH CHEESE
+                                <span>(5pcs) .... AED 35.00  
+                                </span></li>
+                            <li class="col-md-6 col-lg-6"> SHELL MUSSEL GRILL WITH CHEESE
+                                <span>(10pcs) .... AED 59.00
+                                </span></li>
+                            <li class="col-md-6 col-lg-6"> SHELL MUSSEL GRILL WITH CHEESE
+                                <span>(20pcs) .... AED 79.00
+                                </span></li>
+                            <li class="col-md-6 col-lg-6"> SHELL MUSSEL GRILL WITH CHEESE
+                                <span>(30pcs) .... AED 99.00
+                                </span></li>
+                            <li class="col-md-6 col-lg-6"> TOM KHA KAI CHICKEN
+                                <span>.............................. AED 40.00 
+                                </span></li>
+                            <li class="col-md-6 col-lg-6"> TOM YUM FRIED RICE SHRIMP
+                                <span>...................... AED 40.00
+                                </span></li>
+                            <li class="col-md-6 col-lg-6"> FRIED RICE SHIMP
+                                <span>............................................... AED 40.00
+                                </span></li>
+                            <li class="col-md-6 col-lg-6"> TOM YUM SOUP SEA FOOD
+                                <span>...................... AED 40.00, 60.00, 80.00
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6"> GRILLED LOBSTER
+                                <span>...........................................  AED 250.00 
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6"> PAD THAI SEA FOOD
+                                <span>.................................. AED 40.00
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6"> MANGO STICKY RICE
+                                <span>................................ AED 35.00
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6"> SEA FOOD SALAD
+                                <span>......................................... AED 40.00
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6">  BAULOY DESSERT
+                                <span>............................................ AED 25.00
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6"> JUMBO PRAWNS GRILLED WITH CHEESE
+                                <span>.... AED 59.00
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6"> FRIED CHICKEN DYNAMITE
+                                <span>............................. AED 35.00
+                                </span></li>                            
+                            <li class="col-md-6 col-lg-6"> SPICY GLASS NOODLE SALAD SEA FOOD 
+                                <span>.... AED 40.00
+                                </span></li>
                         </ul>
                     </div>
                 </div>
@@ -147,33 +265,72 @@
                 <div class="dish-list-container">
                     <ul class="dish-list row">
                         <li class="col-md-6 col-lg-6">CALMARI ROLL
-                            <span>.............................. AED 32.00 
+                            <span>................................................ AED 32.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">SOFT SHELL CRAB ROLL
-                            <span>.................. AED 32.00 
+                            <span>............................ AED 32.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">SALMON NIGRI
-                            <span>.............................. AED 28.00 
+                            <span>.............................................. AED 28.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">SUSHI VOLCANO
-                            <span>.............................. AED 48.00 
+                            <span>............................................... AED 48.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">SUSHI SLICE BEEF MAKI
-                            <span>............... AED 55.00 
+                            <span>............................ AED 55.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">CHEESE ROLL 
-                            <span>................................... AED 22.00 
+                            <span>.................................................... AED 22.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">UNAGI ROLL 
-                            <span>.................................. AED 32.00 
+                            <span>..................................................... AED 32.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">SUSHI SPECIAL PASION ROLL
-                            <span>........ AED 50.00 
+                            <span>................ AED 50.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">SUSHI CRAB ROLL
-                            <span>........................ AED 25.00 
+                            <span>......................................... AED 25.00 
                             </span></li>
                         <li class="col-md-6 col-lg-6">TUNA NIGIRI
+                            <span>........................................................ AED 32.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">SUSHI SPICY SHRIMP
+                            <span>..................................... AED 45.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">SCALLOP  ROLL
+                            <span>............................................... AED 32.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PASION LOBSTER
+                            <span>.............................................. AED 55.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">EBI NIGIRI
+                            <span>............................................................. AED 35.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">CRAB NIGIRI
+                            <span>.................................................... AED 28.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">DYNAMITE SHRIMP
+                            <span>............................................ AED 28.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">SUSHI WILED CALIFORNIA ROLL
+                            <span>.......... AED 45.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">ASSORTED SUSHI 1
+                            <span>.......................................... AED 150.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">ASSORTED SUSHI 2
+                            <span>..................................... AED 150.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">ASSORTED SUSHI 3
+                            <span>..................................... AED 150.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">TAMAGO ROLL
+                            <span>.............................................. AED 28.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">AVOCADO SALMON ROLL
+                            <span>....................... AED 32.00 
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">SOFT SHELL CRAB ROLL
                             <span>..................................... AED 32.00 
                             </span></li>
                     </ul>
@@ -181,8 +338,8 @@
             </div>
         </section>
 
-        <!--  Sea Foods Menu Starts-->
-        <section id="sea-foods-menu">
+        <!--  Noodles Menu Starts-->
+        <section id="noodles-menu">
             <div class="thai-container">
                 <div class="dish-image">
                     <p>NOODLES</p>
@@ -193,39 +350,39 @@
                             <span>.................... AED 42.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">BEEF EGG NOODLES
-                            <span>.................................. AED 22.00
+                            <span>.......................................... AED 22.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">VEG UDON NOODLES
-                            <span>.............................. AED 35.00
+                            <span>.................................. AED 35.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">BEEF UDON NOODLES
-                            <span>.............................. AED 39.00
+                            <span>.................................. AED 39.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">CHICKEN UDON NOODLES
                             <span>..................... AED 37.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">VEGETABLES NOODLES
-                            <span>............................ AED 18.00
+                            <span>.................................. AED 18.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">CHICKEN NOODLES
-                            <span>................................. AED 20.00
+                            <span>..................................... AED 20.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">BEEF NOODLES
-                            <span>........................................ AED 22.00
+                            <span>................................................ AED 22.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">SEA FOOD NOODLES
-                            <span>.............................. AED 24.00
+                            <span>..................................... AED 24.00
                             </span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!--  Asian Foods Menu Starts-->
-        <section id="asian-foods-menu">
+        <!--  Soup and Appetizer Menu Starts-->
+        <section id="soup-and-appetizer">
             <div class="thai-container">
                 <div class="dish-image">
-                    <p>SOUP & APPETISER</p>
+                    <p>SOUP & APPETIZERs</p>
                 </div>
                 <div class="dish-list-container">
                     <ul class="dish-list row">
@@ -236,13 +393,13 @@
                             <span>.............................. AED 28.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">CRISPY CALAMARI
-                            <span>..................................... AED 28.00
+                            <span>............................................ AED 28.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">STEAMED EDAMAME
                             <span>........................................ AED 18.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">PASION TEMPURA
-                            <span>...................................... AED 38.00
+                            <span>........................................... AED 38.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">RAMAN SOUP
                             <span>....................................................... AED 28.00
@@ -256,24 +413,160 @@
         <section id="salads-menu">
             <div class="thai-container">
                 <div class="dish-image">
-                    <p>SALADS</p>
+                    <p>SALAD'S</p>
                 </div>
                 <div class="dish-list-container">
                     <ul class="dish-list row">
                         <li class="col-md-6 col-lg-6">JAPANESE SALAD GINGER DRESSING
-                            <span>.......... AED 35.00
+                            <span>.... AED 35.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">SHRIMP COCKTAIL
-                            <span>.............................. AED 42.00
+                            <span>...................................... AED 42.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">CRISPY CALAMARI SALAD
                             <span>............................. AED 38.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">OSAKI CRAB SALAD
-                            <span>............................. AED 48.00
+                            <span>...................................... AED 48.00
                             </span></li>
                         <li class="col-md-6 col-lg-6">BEETROOT NORI SALAD
                             <span>.............................. AED 28.00
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--  Pasta Menu Starts-->
+        <section id="pasta-menu">
+            <div class="thai-container">
+                <div class="dish-image">
+                    <p>PASTA'S</p>
+                </div>
+                <div class="dish-list-container">
+                    <ul class="dish-list row">
+                        <li class="col-md-6 col-lg-6">SEAFOOD SPEGHETTI OR CHICKEN PASTA
+                            <span>.... AED 30.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PESTO TEGLIATELLE SEAFOOD
+                            <span>.............. AED 29.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PENNE PINK CREAMY SAUCE SEAFOOD
+                            <span>.... AED 29.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">POKE BOWL
+                            <span>....................................................... AED 35.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">CHICKEN PASTA
+                            <span>........................................... AED 30.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PESTO TEGLIATELLE CHICKEN
+                            <span>................. AED 27.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PESTO TEGLIATELLE VEGETABLE
+                            <span>................. AED 25.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PENNE PINK CREAMY SAUCE CHICKEN
+                            <span>.... AED 27.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PENNE PINK CERAMY SAUCE VEGETABLE
+                            <span>.... AED 25.00
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--  Breakfast Menu Starts-->
+        <section id="breakfast">
+            <div class="thai-container">
+                <div class="dish-image">
+                    <p>BREAKFAST</p>
+                </div>
+                <div class="dish-list-container">
+                    <ul class="dish-list row">
+                        <li class="col-md-6 col-lg-6">AVOCADO TOAST
+                            <span>.......................................... AED 28.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">MUSHROOM OMLETTE
+                            <span>.............................. AED 28.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">EGG BENEDICT
+                            <span>.................................................. AED 28.00
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--  Dessert Menu Starts-->
+        <section id="dessert">
+            <div class="thai-container">
+                <div class="dish-image">
+                    <p>DESSERT</p>
+                </div>
+                <div class="dish-list-container">
+                    <ul class="dish-list row">
+                        <li class="col-md-6 col-lg-6">PASION SLICE FRUITS
+                            <span>........................................ AED 25.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">SWEET PASION ICE CREAM
+                            <span>....................... AED 25.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">SWEET ICE CREAM TEMPURA
+                            <span>................. AED 25.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">CHOCOLATE ND MATCHA MOCHI
+                            <span>.....AED 45.00
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--  Juice and Drinks Menu Starts-->
+        <section id="juice-and-drinks">
+            <div class="thai-container">
+                <div class="dish-image">
+                    <p>JUICE & DRINKS</p>
+                </div>
+                <div class="dish-list-container">
+                    <ul class="dish-list row">
+                        <li class="col-md-6 col-lg-6">PASION MOHITO
+                            <span>........................................... AED 15.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">MINT AND LEMON
+                            <span>........................................ AED 17.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">MANGO JUICE
+                            <span>............................................... AED 17.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">WATERMELON JUICE
+                            <span>...................................... AED 17.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">ROCK MELON JUICE
+                            <span>...................................... AED 17.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">ORANGE JUICE
+                            <span>.............................................. AED 17.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">MOUNTAIN DEW
+                            <span>........................................... AED 5.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">MAI DUBAI
+                            <span>........................................................ AED 5.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">AQUAFINA WATER
+                            <span>...................................... AED 5.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">PEPSI
+                            <span>..................................................................... AED 5.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">7UP
+                            <span>.......................................................................... AED 5.00
+                            </span></li>
+                        <li class="col-md-6 col-lg-6">MIRINDA
+                            <span>............................................................... AED 5.00
                             </span></li>
                     </ul>
                 </div>
@@ -333,6 +626,16 @@
         <!-- Preloader -->
         <div id="preloader"></div>
 
+        <!-- Contact Buttons -->
+        <div class="contact-buttons">
+            <a href="tel:+971544669828" class="phone-button">
+                <i class="bx bx-phone"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+971506878229" class="whatsapp-button">
+                <i class="bx bxl-whatsapp"></i>
+            </a>
+        </div>
+
         <!-- Back to Top Button -->
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -346,5 +649,18 @@
 
         <!--  Main JS File -->
         <script src="assets/js/main.js"></script>
+        
+        <script>
+            const whatsappBtn = document.getElementById('whatsapp-button');
+            whatsappBtn.addEventListener('click', () => {
+            window.open('https://api.whatsapp.com/send?phone=+971506878229', '_blank');
+            });
+
+            // Phone button
+            const phoneBtn = document.getElementById('phone-button');
+            phoneBtn.addEventListener('click', () => {
+            window.open('tel:+971544669828', '_blank');
+            });
+        </script>
     </body>
 </html>
