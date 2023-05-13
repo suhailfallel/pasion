@@ -504,6 +504,7 @@ display: block;
 @media (max-width: 768px) {
     .cards p {
         padding-top: 25px;
+        line-height: 1;
     }
 }
 
