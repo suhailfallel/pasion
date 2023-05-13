@@ -70,7 +70,7 @@
                   const comments = document.getElementById("comments").value;
                   const item = new URLSearchParams(window.location.search);
                   const link = 'https://pasionsushi.com/offers.html';
-                  const message = `Item: ${item} %0a Name: ${name} %0a Phone: ${phone} %0a Location: ${location} %0a Comments: ${comments} %0a Ordered Via: ${link}.`;
+                  const message = `Item: ${item} Name: ${name} Phone: ${phone} Location: ${location} Comments: ${comments} Ordered Via: ${link}.`;
                   const url = `https://api.whatsapp.com/send?phone=+971506878229&text=${encodeURIComponent(message)}`;
                   window.open(url);
                 });
