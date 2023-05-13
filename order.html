@@ -69,8 +69,9 @@
                   let email = document.getElementById("email").value;
                   let comments = document.getElementById("comments").value;
                   let item = new URLSearchParams(window.location.search);
+                  let itemName = item.get('item');
                   let link = 'https://pasionsushi.com/offers.html';
-                  let message = `Item: ${item} Name: ${name} Phone: ${phone} Location: ${location} Comments: ${comments} Ordered Via: ${link}.`;
+                  let message = `Item: ${itemName} Name: ${name} Phone: ${phone} Location: ${location} Comments: ${comments} Ordered Via: ${link}.`;
                   let url = `https://api.whatsapp.com/send?phone=+971506878229&text=${encodeURIComponent(message)}`;
                   window.open(url);
                 });
